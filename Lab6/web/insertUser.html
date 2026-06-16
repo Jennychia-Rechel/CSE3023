@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register User</title>
+    <style>
+        .container { width: 400px; margin: 20px auto; font-family: Arial, sans-serif; }
+        fieldset { border: 2px solid #4CAF50; border-radius: 8px; padding: 20px; }
+        legend { font-weight: bold; color: #4CAF50; padding: 0 10px; }
+        table { width: 100%; }
+        td { padding: 8px; }
+        input[type="text"], input[type="password"] { width: 90%; padding: 5px; border-radius: 4px; border: 1px solid #ccc; }
+        .btn-submit { background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="ProcessUser.jsp" method="POST">
+            <fieldset>
+                <legend>Register New User</legend>
+                <table>
+                    <tr><td>Username</td><td><input type="text" name="username" maxlength="15" required></td></tr>
+                    <tr><td>Password</td><td><input type="password" name="password" maxlength="10" required></td></tr>
+                    <tr><td>First Name</td><td><input type="text" name="firstname" maxlength="50" required></td></tr>
+                    <tr><td>Last Name</td><td><input type="text" name="lastname" maxlength="50" required></td></tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <br>
+                            <input type="submit" value="Register" class="btn-submit">
+                            <input type="reset" value="Cancel">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
